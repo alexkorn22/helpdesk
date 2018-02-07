@@ -12,11 +12,17 @@ header {
           font-size: 18px;
         }
       }
-      .date-time {
-        margin-left: 30px;
+
+      .add-ticket {
+        padding-right: 75px;
       }
     }
   }
+
+}
+
+#home-page {
+  min-height: 77vh;
 
   .tabs {
     margin-top: 50px;
@@ -24,6 +30,13 @@ header {
       padding: 50px 0;
       border: 1px solid #000;
       margin: 0 10px;
+      color: #000;
+      &.active {
+        background: #dc3545;
+      }
+      &:hover {
+        background: #c82333;
+      }
     }
   }
 
@@ -47,6 +60,102 @@ header {
         list-style-type: none;
         text-align: center;
         vertical-align: middle;
+      }
+    }
+
+    .wrap-show-more {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+    }
+  }
+
+
+  .content-tickets {
+    li {
+      display: none;
+    }
+  }
+
+}
+
+footer {
+  text-align: center;
+  height: 100px;
+  background-color: #343a40;
+  color: #fff;
+  bottom: 0;
+  //position: absolute;
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*page ticket*/
+#some-ticket {
+  .ticket-head {
+    margin: 50px 0 10px 0;
+    display: flex;
+    align-items: center;
+
+    .number-date {
+      display: flex;
+      p {
+        margin-right: 30px;
+      }
+    }
+    .add-item {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .items {
+    .item {
+      border: 1px solid $gray;
+      width: 100%;
+      margin: 50px 0;
+      .wrap-head-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        height: 60px;
+        background-color: rgb(167, 167, 167);
+        margin-bottom: 20px;
+        
+        .label-item {
+          span {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .body-item {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        span {
+          width: 100%;
+        }
+      }
+    }
+    .item.collaborator {
+      .wrap-head-item {
+        background-color: rgb(255, 154, 154);
+        .label-item {
+          span {
+            background-color: #343a40;
+          }
+        }
       }
     }
   }

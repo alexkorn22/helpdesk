@@ -6,6 +6,11 @@ $( document ).ready(function() {
     $('#add-ticket').on('shown.bs.modal', function () {
 
     });
+/*tooltip*/
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
 
 
 /*кнопка показать больше записей*/
@@ -19,5 +24,14 @@ $( document ).ready(function() {
             }
         });
     });
+
+
+
+/*tabs to accordion*/
+    $('#pills-tab').tabCollapse({
+        tabsClass: 'd-none d-sm-flex',
+        accordionClass: 'd-block d-sm-none'
+    });
+
 
 });

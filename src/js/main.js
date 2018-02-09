@@ -28,10 +28,10 @@ $( document ).ready(function() {
 
 
 /*tabs to accordion*/
-    $('#pills-tab').tabCollapse({
-        tabsClass: 'd-none d-sm-flex',
-        accordionClass: 'd-block d-sm-none'
-    });
+    // $('#pills-tab').tabCollapse({
+    //     tabsClass: 'd-none d-sm-flex',
+    //     accordionClass: 'd-block d-sm-none'
+    // });
 
 
 });

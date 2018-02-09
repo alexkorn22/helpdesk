@@ -21,10 +21,10 @@
 <header>
     <div class="header-wrap">
         <div class="brand">
-            <a href="/">Help Artorg</a>
-        </div>
-        <div class="notification">
-            <span class="badge badge-danger">5</span>
+            <a href="/">
+                <img src="img/logoWedo.png" class="logo d-none d-sm-block" alt="WeDo">
+                <img src="img/logo1.png" class="logo d-block d-sm-none" alt="WeDo">
+            </a>
         </div>
         <div class="add-ticket">
             <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#add-ticket"><i class="material-icons">playlist_add</i><span class="d-none d-sm-block">Новое обращение</span></button>
@@ -44,7 +44,6 @@
                 </li>
             </ul>
         </div>
-
     </div>
 </header>
 
@@ -61,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="add-item">
+                <div class="add-item d-none d-sm-flex">
                     <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#add-item">Добавить запись</button>
                 </div>
             </div>
@@ -70,9 +69,6 @@
             <div class="col-md-12">
                 <div class="item client">
                 <div class="wrap-head-item">
-                    <div class="label-item">
-                        <span>Вы</span>
-                    </div>
                     <div class="title-item">
                         <h4>Тема записи, хз зачем, но в 1с есть она</h4>
                     </div>
@@ -88,9 +84,6 @@
             </div>
                 <div class="item collaborator">
                 <div class="wrap-head-item">
-                    <div class="label-item">
-                        <span>Сотрудник</span>
-                    </div>
                     <div class="title-item">
                         <h4>Ответочка Тема записи, хз зачем, но в 1с есть она</h4>
                     </div>
@@ -106,9 +99,6 @@
             </div>
                 <div class="item client">
                     <div class="wrap-head-item">
-                        <div class="label-item">
-                            <span>Вы</span>
-                        </div>
                         <div class="title-item">
                             <h4>Тема записи, хз зачем, но в 1с есть она</h4>
                         </div>
@@ -121,6 +111,13 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at consequatur cum dolor eaque eos eum exercitationem in ipsum laborum modi nam nostrum  consectetur adipisicing elit. Amet at consequatur cum dolor eaque eos eum exercitationem in ipsum laborum modi nam nostrum  consectetur adipisicing elit. Amet at consequatur cum dolor eaque eos eum exercitationem in ipsum laborum modi nam nostrum obcaecati officia, quam reiciendis suscipit tempore voluptatem.
                     </span>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row btn-add-item-bottom">
+            <div class="col-md-12">
+                <div class="add-item">
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#add-item"><i class="material-icons d-block d-sm-none">create</i><span class="d-none d-sm-block">Добавить запись</span></button>
                 </div>
             </div>
         </div>
@@ -195,7 +192,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/bootstrap-tabcollapse.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
